@@ -13,9 +13,9 @@ function control(e) {
       isJumping = true
       jump()
     }
-  }
 }
-document.addEventListener('keyup', control)
+}
+  document.addEventListener('keyup', control)
 
 let position = 0
 function jump() {
@@ -57,7 +57,7 @@ function generateObstacles() {
       clearInterval(timerId)
       alert.innerHTML = 'Game Over'
       isGameOver = true
-      //remove all children
+       //remove all children
       body.removeChild(body.firstChild)
       while (grid.firstChild) {
         grid.removeChild(grid.lastChild)
